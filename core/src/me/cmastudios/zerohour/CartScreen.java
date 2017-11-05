@@ -44,8 +44,8 @@ public class CartScreen implements Screen {
 
     @Override
     public void render (float delta) {
-        dev.setX(dev.getX() - delta*45 * 10);
-        dev.setY(dev.getY() + delta*20 * 10);
+        dev.setX(dev.getX() - delta*45 * 15);
+        dev.setY(dev.getY() + delta*20 * 15);
         if (dev.getX() < 0 && random.nextInt(1000) > 995) {
             dev.setX(750);
             dev.setY(200);
